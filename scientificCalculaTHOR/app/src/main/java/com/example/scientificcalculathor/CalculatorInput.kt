@@ -27,7 +27,7 @@ open class CalculatorInput(
                 }
                 return handleEqual()
             } else {
-                if (myString?.isNotEmpty() == true && this.newNumber.isNotEmpty()){
+                if (myString?.isNotEmpty() == true && this.newNumber.isNotEmpty() && newInput in rightAssociative){
                     myoutput += "x"
                 }
                 if (newInput in rightAssociative && this.newNumber.isEmpty()) {
